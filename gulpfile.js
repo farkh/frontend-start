@@ -54,7 +54,7 @@ var config = {
   tunnel: true,
   host: 'localhost',
   port: 9000,
-  logPrefix: 'Frontend_Devil'
+  logPrefix: 'Frontend'
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -130,7 +130,7 @@ gulp.task('watch', function(){
   watch([path.watch.html], function(event, cb) {
     gulp.start('html:build');
   });
-  watch([path.watch.style], function(event, cb) {
+  watch([path.watch.scss], function(event, cb) {
     gulp.start('style:build');
   });
   watch([path.watch.js], function(event, cb) {

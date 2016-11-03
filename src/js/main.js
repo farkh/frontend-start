@@ -1,12 +1,7 @@
-/*
- * Third Party
- */
 //= ../../bower_components/jquery/dist/jquery.js
 
-
-
-
-/*
- * Custom
- */
 //= partials/app.js
+
+$('.add-content').on("click", function() {
+  $('.lipsum').clone().removeClass("lipsum").appendTo('.wrap-lipsum');
+});
